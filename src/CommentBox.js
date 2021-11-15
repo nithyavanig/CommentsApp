@@ -1,28 +1,30 @@
-import { cloneDeep } from "lodash";
+import { clone, cloneDeep } from "lodash";
 import React from "react";
-import { useState } from "react";
 import DisplayComments from "./DisplayComments";
 
 const CommentBox = (props) => {
     const { commentsData, updateData , level} = props;
+    // const childLevel = clone(level);
+    // const displayData = cloneDeep(commentsData);
 
     const getStyle = (level, isChildren) => {
-        const leftPadding = level===0? 5: 10*level;
+        const leftPadding = level===0? 5: 20*level;
         return {
             paddingLeft: `${leftPadding}px`,
             paddingRight: '20px',
             paddingTop: '10px',
-            paddingBottom: '10px',
-            // border: isChildren? '1px solid blue': 'none'
+            paddingBottom: '10px'
         }
     }
-    console.log("level:", level);
+    console.log('CommentBox: ', commentsData);
+    console.log("CommentBox level:", level);
 
     return (
         commentsData.map(commentObj => {
             
             const {_id: commentId, comment: commentText} = commentObj;
-            
+            console.log("comments : ",commentText);
+            console.log("level:", level);
             const isChildren = level >0;
             const hasChildren = commentObj.children && commentObj.children.length>0;
             if(commentObj.hasChildren){
@@ -31,7 +33,15 @@ const CommentBox = (props) => {
             const showHideVal = commentObj.showComments ? "Hide Comments": "Show Comments";
 
             const handleShowHide = () => {
-                updateData(commentObj._id, "showComments", !commentObj.showComments);
+                const value = !commentObj.showComments;
+                updateData(commentObj._id, "showComments", value);
+            }
+
+            const handleReply = (event) => {
+                if(event.key === "Enter"){
+                    const value = event.target.value;
+                    updateData(commentObj._id, "reply", value);
+                }
             }
             
             return(
@@ -40,16 +50,22 @@ const CommentBox = (props) => {
                         <span className= "comment-box">
                             {commentText}
                         </span>
-                        {
-                            hasChildren && (
-                                <button id="button" value="showhide" onClick={handleShowHide}>{showHideVal}</button>
-                            )
-                        }
+                        <div className="comment-actions">
+                            <span className={`${commentId}-reply`}>
+                                {/* <button id="button" value="reply" onClick={showTextArea}>{showHideVal}</button> */}
+                                <input type="text" value={""} className="reply-text-input" onKeyPress={(e)=>handleReply(e)}/>
+                            </span>
+                            {
+                                hasChildren && (
+                                    <button id="button" value="showhide" onClick={handleShowHide}>{showHideVal}</button>
+                                )
+                            }
+                        </div>
                     </div>
                     {
                         hasChildren && commentObj.showComments && (
                             <div className ={`children ${commentId}`} >
-                                <DisplayComments commentsData = {commentObj.children} level={level+1}/>
+                                <DisplayComments commentsData = {commentObj.children} level={level+1} updateData={updateData}/>
                             </div>
                         )
                     }

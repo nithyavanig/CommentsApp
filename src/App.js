@@ -1,6 +1,6 @@
 import './App.css';
-// import { initialData } from "./data";
-import DisplayComments from './DisplayComments';
+import { initialData } from "./data";
+import CommentContainer from './CommentContainer';
 
 function App() {
   return (
@@ -8,7 +8,7 @@ function App() {
       <header className="App-header">
         Comments App
       </header>
-      <DisplayComments/>
+      <CommentContainer data={initialData}/>
     </div>
   );
 }

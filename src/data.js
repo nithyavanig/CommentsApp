@@ -1,4 +1,4 @@
-export const initialData = [
+export let initialData = [
     {
       "_id": "5dc59626e36d4b8912c24a3d",
       "comment": "Nostrud elit Lorem amet occaecat. Velit dolor occaecat ipsum consequat anim esse id amet ipsum et nulla duis. Ea minim officia sit amet. Excepteur nisi sit cupidatat ut veniam elit sunt occaecat elit duis nisi exercitation culpa. Amet laborum ut aliqua tempor. Nostrud nisi ea sunt labore nostrud culpa mollit.\r\n",
