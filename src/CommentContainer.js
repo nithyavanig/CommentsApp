@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import { cloneDeep } from "lodash";
 import DisplayComments from "./DisplayComments";
+import { makeid } from "./Util";
 
 const getUpdatedComments = (modifiedData, id, type, value) => {
     modifiedData.forEach(commentObj =>{
@@ -8,6 +9,14 @@ const getUpdatedComments = (modifiedData, id, type, value) => {
             if(type === 'showComments'){
                 commentObj.showComments = value;
                 return;
+            }
+            else if(type === "reply") {
+                const newComment = {
+                    _id: makeid(10),
+                    comment: value
+                }
+                commentObj.children.push(newComment);
+                commentObj.showComments = true;
             }
         }
         else if(commentObj.children && commentObj.children.length>0){

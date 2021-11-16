@@ -15,3 +15,12 @@
     align-items: flex-start;
     padding-left: 10px;
 }
+
+.reply-text-input {
+    width: 100px;
+}
+
+.btn-reply , .btn-reply-submit{
+    color: #0096FF;
+    cursor: pointer;
+}
