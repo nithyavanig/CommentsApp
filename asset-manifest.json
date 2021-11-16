@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/nithyavanig.github.io/CommentsApp/static/css/main.36612a56.chunk.css",
-    "main.js": "/nithyavanig.github.io/CommentsApp/static/js/main.4f4b03d7.chunk.js",
-    "main.js.map": "/nithyavanig.github.io/CommentsApp/static/js/main.4f4b03d7.chunk.js.map",
-    "runtime-main.js": "/nithyavanig.github.io/CommentsApp/static/js/runtime-main.12193fcb.js",
-    "runtime-main.js.map": "/nithyavanig.github.io/CommentsApp/static/js/runtime-main.12193fcb.js.map",
-    "static/js/2.de2631a0.chunk.js": "/nithyavanig.github.io/CommentsApp/static/js/2.de2631a0.chunk.js",
-    "static/js/2.de2631a0.chunk.js.map": "/nithyavanig.github.io/CommentsApp/static/js/2.de2631a0.chunk.js.map",
-    "static/js/3.e45f4504.chunk.js": "/nithyavanig.github.io/CommentsApp/static/js/3.e45f4504.chunk.js",
-    "static/js/3.e45f4504.chunk.js.map": "/nithyavanig.github.io/CommentsApp/static/js/3.e45f4504.chunk.js.map",
-    "index.html": "/nithyavanig.github.io/CommentsApp/index.html",
-    "static/css/main.36612a56.chunk.css.map": "/nithyavanig.github.io/CommentsApp/static/css/main.36612a56.chunk.css.map",
-    "static/js/2.de2631a0.chunk.js.LICENSE.txt": "/nithyavanig.github.io/CommentsApp/static/js/2.de2631a0.chunk.js.LICENSE.txt"
+    "main.css": "/CommentsApp/static/css/main.36612a56.chunk.css",
+    "main.js": "/CommentsApp/static/js/main.4f4b03d7.chunk.js",
+    "main.js.map": "/CommentsApp/static/js/main.4f4b03d7.chunk.js.map",
+    "runtime-main.js": "/CommentsApp/static/js/runtime-main.e6b2d8d5.js",
+    "runtime-main.js.map": "/CommentsApp/static/js/runtime-main.e6b2d8d5.js.map",
+    "static/js/2.de2631a0.chunk.js": "/CommentsApp/static/js/2.de2631a0.chunk.js",
+    "static/js/2.de2631a0.chunk.js.map": "/CommentsApp/static/js/2.de2631a0.chunk.js.map",
+    "static/js/3.e45f4504.chunk.js": "/CommentsApp/static/js/3.e45f4504.chunk.js",
+    "static/js/3.e45f4504.chunk.js.map": "/CommentsApp/static/js/3.e45f4504.chunk.js.map",
+    "index.html": "/CommentsApp/index.html",
+    "static/css/main.36612a56.chunk.css.map": "/CommentsApp/static/css/main.36612a56.chunk.css.map",
+    "static/js/2.de2631a0.chunk.js.LICENSE.txt": "/CommentsApp/static/js/2.de2631a0.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.12193fcb.js",
+    "static/js/runtime-main.e6b2d8d5.js",
     "static/js/2.de2631a0.chunk.js",
     "static/css/main.36612a56.chunk.css",
     "static/js/main.4f4b03d7.chunk.js"
