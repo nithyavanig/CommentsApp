@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/nithyavanig/CommentsApp/static/css/main.36612a56.chunk.css",
+    "main.js": "/nithyavanig/CommentsApp/static/js/main.4f4b03d7.chunk.js",
+    "main.js.map": "/nithyavanig/CommentsApp/static/js/main.4f4b03d7.chunk.js.map",
+    "runtime-main.js": "/nithyavanig/CommentsApp/static/js/runtime-main.fe338f9a.js",
+    "runtime-main.js.map": "/nithyavanig/CommentsApp/static/js/runtime-main.fe338f9a.js.map",
+    "static/js/2.de2631a0.chunk.js": "/nithyavanig/CommentsApp/static/js/2.de2631a0.chunk.js",
+    "static/js/2.de2631a0.chunk.js.map": "/nithyavanig/CommentsApp/static/js/2.de2631a0.chunk.js.map",
+    "static/js/3.e45f4504.chunk.js": "/nithyavanig/CommentsApp/static/js/3.e45f4504.chunk.js",
+    "static/js/3.e45f4504.chunk.js.map": "/nithyavanig/CommentsApp/static/js/3.e45f4504.chunk.js.map",
+    "index.html": "/nithyavanig/CommentsApp/index.html",
+    "static/css/main.36612a56.chunk.css.map": "/nithyavanig/CommentsApp/static/css/main.36612a56.chunk.css.map",
+    "static/js/2.de2631a0.chunk.js.LICENSE.txt": "/nithyavanig/CommentsApp/static/js/2.de2631a0.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.fe338f9a.js",
+    "static/js/2.de2631a0.chunk.js",
+    "static/css/main.36612a56.chunk.css",
+    "static/js/main.4f4b03d7.chunk.js"
+  ]
+}
